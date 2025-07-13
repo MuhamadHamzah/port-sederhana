@@ -1203,17 +1203,6 @@ section {
   }
 }
 
-@keyframes typing {
-  0%,
-  50% {
-    content: "Full Stack Developer";
-  }
-  51%,
-  100% {
-    content: "UI/UX Designer";
-  }
-}
-
 @keyframes blink {
   0%,
   50% {
@@ -1399,4 +1388,73 @@ section {
   .container {
     padding: 0 1rem;
   }
+}
+
+/* Skills Slider */
+.skills-slider {
+  margin-top: 4rem;
+}
+
+.skills-slider h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--text-light);
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 -2rem;
+}
+
+.skills-track {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.skills-track-right {
+  animation: slideRight 15s linear infinite;
+  -webkit-animation: slideRight s linear infinite;
+}
+
+.skills-track-left {
+  animation: slideLeft 15s linear infinite;
+  -webkit-animation: slideLeft 15s linear infinite;
+}
+
+.skill-item {
+  min-width: 100px;
+  padding: 1rem;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.skill-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skill-item span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-light);
 }
