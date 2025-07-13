@@ -1388,9 +1388,8 @@ section {
   .container {
     padding: 0 1rem;
   }
-}
 
-/* Skills Slider */
+  /* Skills Slider */
 .skills-slider {
   margin-top: 4rem;
 }
@@ -1458,3 +1457,7 @@ section {
   font-weight: 300;
   color: var(--text-light);
 }
+
+}
+
+
